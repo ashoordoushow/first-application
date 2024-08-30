@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   get "/hello_there", controller: "pages", action: "hello_method"
+  get "/giants", controller: "pages", action: "large_people"
 
   # Defines the root path route ("/")
   # root "posts#index"
